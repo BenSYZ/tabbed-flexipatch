@@ -14,7 +14,7 @@
  * when including this patch.
  * https://tools.suckless.org/tabbed/patches/alpha/
  */
-#define ALPHA_PATCH 0
+#define ALPHA_PATCH 1
 
 /* This patch hides the tab bar if only one tab is open.
  * https://tools.suckless.org/tabbed/patches/autohide/

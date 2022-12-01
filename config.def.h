@@ -93,10 +93,10 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,     XK_Return,    focusonce,   { 0 } },
 	{ MODKEY|ShiftMask,     XK_Return,    spawn,       { 0 } },
 
-	{ MODKEY|ShiftMask,     XK_l,         rotate,      { .i = +1 } },
-	{ MODKEY|ShiftMask,     XK_h,         rotate,      { .i = -1 } },
-	{ MODKEY|ShiftMask,     XK_j,         movetab,     { .i = -1 } },
-	{ MODKEY|ShiftMask,     XK_k,         movetab,     { .i = +1 } },
+	{ MODKEY|ShiftMask,     XK_e,         rotate,      { .i = +1 } },
+	{ MODKEY|ShiftMask,     XK_n,         rotate,      { .i = -1 } },
+	{ MODKEY|ShiftMask,     XK_h,         movetab,     { .i = -1 } },
+	{ MODKEY|ShiftMask,     XK_i,         movetab,     { .i = +1 } },
 	{ MODKEY,               XK_Tab,       rotate,      { .i = 0 } },
 
 	{ MODKEY,               XK_grave,     spawn,       SETPROP("_TABBED_SELECT_TAB") },
@@ -111,10 +111,10 @@ static const Key keys[] = {
 	{ MODKEY,               XK_9,         move,        { .i = 8 } },
 	{ MODKEY,               XK_0,         move,        { .i = 9 } },
 
-	{ MODKEY,               XK_q,         killclient,  { 0 } },
+	{ MODKEY,               XK_w,         killclient,  { 0 } },
 
-	{ MODKEY,               XK_u,         focusurgent, { 0 } },
-	{ MODKEY|ShiftMask,     XK_u,         toggle,      { .v = (void*) &urgentswitch } },
+	{ MODKEY,               XK_l,         focusurgent, { 0 } },
+	{ MODKEY|ShiftMask,     XK_l,         toggle,      { .v = (void*) &urgentswitch } },
 
 	{ 0,                    XK_F11,       fullscreen,  { 0 } },
 	#if HIDETABS_PATCH
@@ -128,10 +128,10 @@ static const Key keys[] = {
 static const Key keyreleases[] = {
 	/* modifier             key             function     argument */
 	#if HIDETABS_PATCH
-	{ MODKEY|ShiftMask,     XK_Shift_L,     showbar,     { .i = 0 } },
-	{ MODKEY|ShiftMask,     XK_Control_L,   showbar,     { .i = 0 } },
+	{ MODKEY|ShiftMask,     XK_Shift_I,     showbar,     { .i = 0 } },
+	{ MODKEY|ShiftMask,     XK_Control_I,   showbar,     { .i = 0 } },
 	#else
-	{ 0,                    XK_Shift_L,     NULL,        { 0 } },
+	{ 0,                    XK_Shift_I,     NULL,        { 0 } },
 	#endif // HIDETABS_PATCH
 
 };
